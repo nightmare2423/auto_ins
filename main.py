@@ -1,3 +1,4 @@
+import os
 from re import*
 from mydic import*
 
@@ -65,6 +66,9 @@ while 1:
     if a=='bye':
         print('bye');
         break;
+    elif a=='clear':
+        os.system("cls");
+        continue;
     a=getins(a);
     ans=getnum(a);
     if ans==-1:
